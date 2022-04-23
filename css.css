@@ -1,0 +1,28 @@
+body{
+    background: #0a0819;;
+
+}
+
+h5{
+    color: white;
+
+}
+
+
+.container-fluid{
+    color: white;
+}
+.answer{
+    color: blue;
+    width: 100%;
+    background-color:lightgreen;
+    border-radius:30px;
+    margin: 5px;  
+}
+
+.progress{
+height: 10px;
+background-color:black;
+
+    
+}
