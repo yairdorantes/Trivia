@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
 body{
     background: #0a0819;;
 
 }
+#question{
+  
+font-family: 'Oswald', sans-serif;
 
+}
 h5{
     color: white;
 
@@ -13,16 +20,138 @@ h5{
     color: white;
 }
 .answer{
-    color: blue;
+    font-family: 'Oswald', sans-serif;
+    color: white;
     width: 100%;
-    background-color:lightgreen;
+    background-color:#312f47;
     border-radius:30px;
     margin: 5px;  
+    cursor: pointer;
 }
-
+img{
+    margin:10px;
+    width:50px;
+  
+   
+}
 .progress{
 height: 10px;
-background-color:black;
+background-color:black;   
+}
 
+.succes{
+    color: white;
+    background-color:#2ECC71 ;
+    animation-name: parpadeo;
+  animation-duration: .8s;     
+}
+.d-flex{
+    background-color:#312f46;
+}
+.xd{
+    padding: 10px 90px 16px 24px;
+}
+.fail{
+    background-color:#E74C3C;
+   border-radius:30px;
+transition: all 0.2s ease-in-out;
+animation: swing 1s ease;
+animation-iteration-count: 1;
+}
+@keyframes parpadeo {  
+    0% { opacity: 0.0; }
+    30%{opacity:1.0; }
+    60% { opacity: 0.0; }
+    100%{opacity:1.0; }
+  }
+
+#streak{
+    font-family: 'Oswald', sans-serif;
+  
+}
+.streak-win{
+    animation: animateHeart 1.5s ;
+}
+
+
+@keyframes swing {
+15% {
+transform: translateX(10px);
+}
+30% {
+transform: translateX(-10px);
+}
+50% {
+transform: translateX(9px);
+}
+65% {
+transform: translateX(-9px);
+}
+80% {
+transform: translateX(9px);
+}
+100%{
+transform: translateX(0);
+}
+}
+
+.losed-streak{
+   animation: animateHeartRed 1.5s;
+}
+
+@keyframes animateHeart {
+  0% {
+    transform: scale(0.1);
     
+  }
+  5% {
+    transform:  scale(0.9);
+  }
+  10% {
+    transform:  scale(0.7);color: #ffc600;
+  }
+  15% {
+    transform:  scale(1);
+  }
+  50% {
+    transform:  scale(0.9);
+  }
+  100% {
+    transform:  scale(0.9);
+  }
+}
+
+@keyframes animateHeartRed {
+  0% {
+    transform: scale(0.1);
+    
+  }
+  5% {
+    transform:  scale(0.9);
+  }
+  10% {
+    transform:  scale(0.7);color: red;
+  }
+  15% {
+    transform:  scale(1);
+  }
+  50% {
+    transform:  scale(0.9);
+  }
+  100% {
+    transform:  scale(0.9);
+  }
+}
+
+.container-fluid{
+    padding: 10px;
+}
+
+@media screen and (min-width: 1000px){
+    .container-fluid{
+        width: 70%;
+    }
+    .enlace{
+        text-align: center;
+    }
 }
